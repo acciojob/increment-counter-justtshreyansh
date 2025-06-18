@@ -3,7 +3,7 @@ const btn = document.querySelector("#incrementBtn");
 const p = document.querySelector("#counter");
 function eventHandler(){
 	let val = p.innerText;
-	alert(val);
+	alert(parseInt(val));
 	p.innerText = parseInt(val) + 1;
 }
 btn.addEventListener('click',eventHandler);
